@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(37, 36, 117);
+}
+    
+ul{
+    list-style: none;
+    text-align: right;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    color: #FFF;
+    padding: 5px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 22px;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+ul li ul.dropdown{
+    width: 200%;
+    background: rgb(37, 36, 117);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background: rgb(102, 102, 139);
+}
+ ul li:hover ul.dropdown{
+    display: block;
+ }
+
+h1{
+        padding: 5px 3px;
+        color: #FFF;
+        text-decoration: none;
+        text-align: left;
+        font-size: 2em;
+}
+h2{font-size:  3em;}
+h3{font-size:  2em;}
+p{font-size: 1.5em;}
+ul{list-style: none;}
+
+button{
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0.5);  
+    box-shadow: 2px 2px 10px rgb(0, 0, 0.5);  
+    color: white;
+    background-color: grey;
+}
+ 
+button:hover{
+    background-color: rgb(49, 46, 46);
+}
+.container{
+    max-width: 1300px;
+    margin: 0;
+}
+#hero .img-container{
+    margin: 0;
+    background-position:  center center;
+    height: 800px;
+    background-image: url(/Img/principal.png);
+    background-size: cover;
+    width: 100%;
+}
+
+
+#Nuestra-Tienda .container{
+    display: flex;
+    text-align: center;
+    padding: 90px 12px;
+    padding:  10px 30 px;
+    justify-content: space-evenly;
+}
+
+#Nuestra-Tienda .img-container{
+    margin: 0;
+    background-position:left left;
+    height: 500px;
+    background-image: url(/Img/tienda.png);
+    background-size: cover;
+    width: 200%;
+}
+
+#Nuestros-Productos{
+    background-color: rgb(122, 115, 115);  
+    color:rgb(119, 16, 16);
+    font-weight: bold;
+    text-align: center;
+}
+
+#Nuestros-Productos .programas{
+    display: flex;
+    justify-content: center;
+}
+
+#Nuestros-Productos p{
+    display: block;
+}
+
+#Nuestros-Productos .container{
+    
+    padding: 10px 30px;
+}
+
+
+#Nuestros-Productos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 180px 0px;
+    margin: 20px;
+    border-radius: 15 px;
+}
+        
+
+
+.carta:first-child{
+    background-image: url("/Img/ciclismo.jpg");
+    width: 50%;
+}
+
+.carta:nth-child(2){
+    background-image: url("/Img/natacion.png");
+    width: 50%;
+}
+.carta:nth-child(3){
+    background-image: url("/Img/gim.jpg");
+    width: 50%;
+}
+
+.carta:nth-child(4){
+    background-image: url("/Img/Senderismo.png");
+    width: 50%;
+}
+
+
+#contactanos{
+    
+    background-color: rgb(131, 133, 196);
+    padding: 15px 0px;
+    height: 350px;
+}
+
+#contactanos .container{
+    background-position: center center;
+    background-size: cover;
+    padding: 3px 0px;
+    margin: 20px;
+    border-radius: 7 px;
+
+}
+
+#contactanos .dato{
+    background-position: center ;
+    background-size: cover;
+    padding: 0;
+    margin: 10px;
+    border-radius: 15 px;
+    color: white;
+}
+
+#contactanos .contacto{
+    display: flex;
+    color: white;
+}
+
+ 
+
+#copig .container{
+    margin: 0;
+    background-position:  center center;
+    height: 50px;
+    background-size: cover;
+    width: 100%;
+}
+
+#copig p{
+    text-align:right;
+}
+
+.container-boton{
+    background-color: #2e6329;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.boton{
+    width: 50px;
+    transition: ease 1s;
+}
+
+@keyframes efecto{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+        box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+.formu {
+    width: 600px;
+    background: rgb(26, 149, 158);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.formu h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.controls{
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 4px;
+    border: 1px;
+}
+
+.formu .boton{
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0.5);  
+    box-shadow: 2px 2px 10px rgb(0, 0, 0.5);  
+    color: white;
+    background-color: grey;
+
+}
+
+.formu .boton:hover{
+    background-color: rgb(49, 46, 46);
+}
+
+.formu2 {
+    background-image: url('/Img/registro.png');
+    background-size: cover;
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+}
+
+
+.formu2 h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.formu2 h5{
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+.formu2 .boton{
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(57, 149, 177);  
+    box-shadow: 2px 2px 10px rgb(0, 0, 0.5);  
+    color: white;
+    background-color: rgb(26, 149, 158);
+
+}
+
+.formu2 .boton:hover{
+    background-color: rgb(25, 43, 102);
+}
+
+body {
+    background-color: rgb(179, 204, 204);
+}
+
+.table-container {
+    max-width: 800px;
+    margin: auto;
+    font-weight: bold;
+    background-color: rgb(26, 149, 158);
+    padding: 70px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff; /* Color de fondo de la tabla */
+}
+
+.table-container th, .table-container td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.resultados {
+    background-size: cover;
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    margin: auto;
+    margin-top: 1px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+}
+
+.resultados .boton-resultados{
+    margin-bottom: 15px auto;
+    width: 50%;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgb(57, 149, 177);  
+    box-shadow: 2px 2px 10px rgb(0, 0, 0.5);  
+    color: white;
+    background-color: rgb(26, 149, 158);
+
+}
+
+.resultados .boton-resultados:hover{
+    background-color: rgb(49, 46, 46);
+}
+
+.table-container h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+}

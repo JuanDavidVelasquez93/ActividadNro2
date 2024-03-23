@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Listado de clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <div class="table-container">
+            <h3 >Clientes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Correo electronico</th>
+                        <th>Celular</th>
+                        <th>Servicio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% clientes.forEach(function(cliente) { %>
+                        <tr>
+                            <td><%= cliente.nombre %></td>
+                            <td><%= cliente.apellidos %></td>
+                            <td><%= cliente.correo %></td>
+                            <td><%= cliente.celular %></td>
+                            <td><%= cliente.servicio %></td>
+                        </tr>
+                    <% }); %>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
